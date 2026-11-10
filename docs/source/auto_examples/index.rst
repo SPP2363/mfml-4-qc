@@ -153,6 +153,91 @@ The below are some examples on how to get started with MFML for your own QC work
     </div>
 
 
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates how to predict molecular forces as the negative gradient of MFML-predicted energies, computed via automatic differentiation (backpropagation through the Coulomb matrix descriptor and kernel evaluation).">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_09_autodiff_forces_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/09_autodiff_forces`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Autodifferentiable Force Prediction with MFML</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="This example demonstrates vector-valued KRR for predicting electronic dipole moments directly as 3D vectors. We compare the use of an isotropic coupling kernel, which essentially boils down to using individual KRR for each component of the dipole moment and the use a output covariance matrix that is learned during training. Readers will note that this latter approach resembles the multi-task GPR.">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_10_vector_krr_dipole_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/10_vector_krr_dipole`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Vector KRR for Dipole Moments</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="In J. Martinka, M. Pederzoli, M. Barbatti, P. O. Dral, J. Pittner, A simple approach to rotationally invariant machine learning of a vector quantity, J. Chem. Phys. 161, 174104 (2024). DOI: 10.1063/5.0230176 the authors present a simple pre and post processing heuristic to train a KRR model for prediction of challenging vector quantities. This method is called the RPR. RPR (Rotate-Predict-Rotate) transforms each geometry into a canonical inertia-tensor frame before computing descriptors and rotates the predictions back to the lab frame, ensuring equivariant predictions.">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_11_rpr_vector_krr_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/11_rpr_vector_krr`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">RPR Frame Canonicalization for Vector KRR</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="We will compares the vector MFML against 3 independent scalar MFML models (one per dipole component) to check if the vector MFML does add any improvement at all.">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_12_vector_mfml_dipole_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/12_vector_mfml_dipole`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Vector MFML for Dipole Moments</div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="sphx-glr-thumbcontainer" tooltip="In this example we will demonstrate a full set of learning curves for the following cases of single fidelity and multifidelity ML models. We will be using the KRR basic architecture.">
+
+.. only:: html
+
+  .. image:: /auto_examples/images/thumb/sphx_glr_13_vector_mfml_learning_curves_thumb.png
+    :alt:
+
+  :doc:`/auto_examples/13_vector_mfml_learning_curves`
+
+.. raw:: html
+
+      <div class="sphx-glr-thumbnail-title">Learning Curve generation for: RPR × T × MFML</div>
+    </div>
+
+
 .. thumbnail-parent-div-close
 
 .. raw:: html
@@ -171,6 +256,11 @@ The below are some examples on how to get started with MFML for your own QC work
    /auto_examples/06_omfml
    /auto_examples/07_orca_oracle
    /auto_examples/08_pool_based_active_learning
+   /auto_examples/09_autodiff_forces
+   /auto_examples/10_vector_krr_dipole
+   /auto_examples/11_rpr_vector_krr
+   /auto_examples/12_vector_mfml_dipole
+   /auto_examples/13_vector_mfml_learning_curves
 
 
 .. only:: html

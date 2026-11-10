@@ -6,16 +6,19 @@
 MFML-4-QC is an open-source library that enables multifidelity machine learning for quantum chemical systems. While the multifidelity methods are model-architecture agnostic, this library provides a lightweight, ultra-fast Numba-compiled Kernel Ridge Regression (KRR) setup as the primary architecture. Users can seamlessly integrate their own custom ML models (e.g., from scikit-learn) and directly interface with quantum chemistry engines like ORCA and PySCF for automated data generation and active learning.
 
 ## Key Features
-* **Ultra-Fast Kernels:** Compute Matérn, Gaussian, Laplacian, and Wasserstein kernels efficiently using JIT-compiled C-loops via Numba.
+* **Ultra-Fast Kernels:** Compute Matern, Gaussian, Laplacian, and Wasserstein kernels efficiently using JIT-compiled C-loops via Numba.
 * **In-Memory Representations:** Generate flattened Coulomb Matrices directly from .xyz trajectories without slow disk I/O.
 * **Flexible ML Architectures:** Use the built-in KRR or drop in any scikit-learn compatible estimator (e.g., RandomForestRegressor, MLPRegressor).
 * **Quantum Chemistry Oracles:** Abstract interfaces to automatically generate inputs, execute runs, and parse outputs from engines like ORCA and PySCF.
+* **Automatic Differentiation:** Differentiable PyTorch wrappers for trained KRR and MFML models, enabling automatic force prediction via backpropagation.
+* **Vector-Valued Learning:** Vector KRR (isotropic and coupled) and Vector MFML for directly learning vector properties such as dipole moments.
+* **RPR Frame Canonicalisation:** Rotate-Predict-Rotate canonicalisation for improved equivariance of vector property predictions.
 
-## Installation (v1.0.0)
+## Installation (v1.5.0)
 **Prerequisites:** Python 3.10 or higher. It is best to install within a fresh `conda` environment to avoid dependency clashes.
 
 ### Installing from PyPI
-Once a stable version is released, users can directly install the pakcage from PyPI using the `pip` call.
+Users can directly install the package from PyPI using the `pip` call.
 ```bash
 # Create and activate a fresh conda environment
 conda create -n mfmlenv python=3.10 -y
@@ -29,7 +32,7 @@ pip install mfml-4-qc
 You can also directly download the GitHub repo and install the package from there.
 ```bash
 # Clone the repository
-git clone https://github.com/vivinvinod/mfml-4-qc.git
+git clone https://github.com/vivinvinod/mfml-qc.git
 
 # Create and activate a fresh conda environment
 conda create -n mfmlenv python=3.10 -y
@@ -45,6 +48,12 @@ If you plan to use the built-in `PySCFEngine` oracle, you can install the packag
 
 ```bash
 pip install .[pyscf]
+```
+
+If you plan to use the automatic differentiation features, install with the optional PyTorch dependency:
+
+```bash
+pip install .[torch]
 ```
 
 To run the `ORCAEngine` you will need to install ORCA. See the [official ORCA manual](https://www.faccts.de/docs/orca/6.1/manual/contents/quickstartguide/installation.html) for details on how to do so.

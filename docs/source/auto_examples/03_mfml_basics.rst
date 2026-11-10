@@ -220,7 +220,7 @@ weights and un-center the predictions using the highest-fidelity mean.
 
  .. code-block:: none
 
-    Upper MFML predictions:   0%|          | 0/4 [00:00<?, ?it/s]    Upper MFML predictions: 100%|██████████| 4/4 [00:00<00:00, 34.74it/s]                                                                         Lower MFML predictions:   0%|          | 0/3 [00:00<?, ?it/s]                                                                 MFML Test Set MAE: 0.008261 eV (0.1900 kcal/mol)
+    Upper MFML predictions:   0%|          | 0/4 [00:00<?, ?it/s]    Upper MFML predictions: 100%|██████████| 4/4 [00:00<00:00, 34.33it/s]                                                                         Lower MFML predictions:   0%|          | 0/3 [00:00<?, ?it/s]                                                                 MFML Test Set MAE: 0.008261 eV (0.1900 kcal/mol)
 
 
 
@@ -266,7 +266,7 @@ and the true reference of the test set.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 1.808 seconds)
+   **Total running time of the script:** (0 minutes 1.756 seconds)
 
 **Estimated memory usage:**  145 MB
 

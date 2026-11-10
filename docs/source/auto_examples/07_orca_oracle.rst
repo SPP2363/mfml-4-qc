@@ -420,9 +420,9 @@ and TD-DFT spectra) directly onto the plot!
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 7.338 seconds)
+   **Total running time of the script:** (0 minutes 7.448 seconds)
 
-**Estimated memory usage:**  112 MB
+**Estimated memory usage:**  114 MB
 
 
 .. _sphx_glr_download_auto_examples_07_orca_oracle.py:

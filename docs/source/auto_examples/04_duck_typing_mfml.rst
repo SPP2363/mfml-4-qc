@@ -155,7 +155,7 @@ duplicate this tree-based model for all 2N-1 required sub-models!
 
  .. code-block:: none
 
-    Extracting X_trains:   0%|          | 0/4 [00:00<?, ?it/s]                                                              Extracting upper y_trains:   0%|          | 0/4 [00:00<?, ?it/s]                                                                    Extracting lower y_trains:   0%|          | 0/3 [00:00<?, ?it/s]                                                                    Training upper ML models...:   0%|          | 0/4 [00:00<?, ?it/s]    Training upper ML models...:  25%|██▌       | 1/4 [00:00<00:00,  6.12it/s]    Training upper ML models...:  50%|█████     | 2/4 [00:00<00:00,  7.49it/s]    Training upper ML models...: 100%|██████████| 4/4 [00:00<00:00,  9.52it/s]                                                                              Training lower ML models:   0%|          | 0/3 [00:00<?, ?it/s]    Training lower ML models:  33%|███▎      | 1/3 [00:00<00:00,  9.39it/s]    Training lower ML models: 100%|██████████| 3/3 [00:00<00:00, 10.64it/s]                                                                       
+    Extracting X_trains:   0%|          | 0/4 [00:00<?, ?it/s]                                                              Extracting upper y_trains:   0%|          | 0/4 [00:00<?, ?it/s]                                                                    Extracting lower y_trains:   0%|          | 0/3 [00:00<?, ?it/s]                                                                    Training upper ML models...:   0%|          | 0/4 [00:00<?, ?it/s]    Training upper ML models...:  25%|██▌       | 1/4 [00:00<00:00,  6.65it/s]    Training upper ML models...:  50%|█████     | 2/4 [00:00<00:00,  7.40it/s]    Training upper ML models...: 100%|██████████| 4/4 [00:00<00:00,  9.68it/s]                                                                              Training lower ML models:   0%|          | 0/3 [00:00<?, ?it/s]    Training lower ML models:  33%|███▎      | 1/3 [00:00<00:00,  8.21it/s]    Training lower ML models:  67%|██████▋   | 2/3 [00:00<00:00,  8.59it/s]    Training lower ML models: 100%|██████████| 3/3 [00:00<00:00,  8.99it/s]                                                                       
 
 
 
@@ -189,7 +189,7 @@ Predicting and Evaluating
 
  .. code-block:: none
 
-    Upper MFML predictions:   0%|          | 0/4 [00:00<?, ?it/s]    Upper MFML predictions: 100%|██████████| 4/4 [00:00<00:00, 34.71it/s]                                                                         Lower MFML predictions:   0%|          | 0/3 [00:00<?, ?it/s]                                                                 MFML (Random Forest) Test Set MAE: 0.029552 eV (0.6797 kcal/mol)
+    Upper MFML predictions:   0%|          | 0/4 [00:00<?, ?it/s]    Upper MFML predictions: 100%|██████████| 4/4 [00:00<00:00, 39.35it/s]                                                                         Lower MFML predictions:   0%|          | 0/3 [00:00<?, ?it/s]                                                                 MFML (Random Forest) Test Set MAE: 0.029552 eV (0.6797 kcal/mol)
 
 
 
@@ -239,7 +239,7 @@ model-agnostic and can be used in a modular fashion.
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 2.130 seconds)
+   **Total running time of the script:** (0 minutes 2.157 seconds)
 
 **Estimated memory usage:**  137 MB
 

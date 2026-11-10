@@ -16,6 +16,13 @@ Documentation for MFML-4-QC
 API Reference
 =============
 
+.. autosummary::
+   :toctree: _autosummary
+   :template: custom-module-template.rst
+   :recursive:
+
+   mfml_qc
+
 Representations
 ---------------
 .. automodule:: mfml_qc.representations
@@ -36,7 +43,7 @@ Data Loaders & Utilities
    :show-inheritance:
 
 Kernel Ridge Regression
--------
+-----------------------
 .. automodule:: mfml_qc.krr
    :members:
    :undoc-members:
@@ -61,7 +68,7 @@ Quantum Chemistry Oracles
 
 
 Multifidelity Machine Learning
----------
+------------------------------
 .. currentmodule:: mfml_qc
 
 .. autoclass:: mfml_qc.mfml.ModelMFML
@@ -72,6 +79,33 @@ Multifidelity Machine Learning
 Active Learning
 ---------------
 .. automodule:: mfml_qc.active_learning
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
+Vectorized Models
+-----------------
+.. automodule:: mfml_qc.vector_krr
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+.. automodule:: mfml_qc.vector_mfml
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Automatic Differentiation
+-------------------------
+.. automodule:: mfml_qc.autodiff
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+RPR
+---
+.. automodule:: mfml_qc.rpr
    :members:
    :undoc-members:
    :show-inheritance:

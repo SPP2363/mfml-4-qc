@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mfml-4-qc"
-version = "1.0.0"
+version = "1.5.0"
 description = "A Multifidelity Machine Learning framework for Quantum Chemistry"
 readme = "README_pypi.md"
 requires-python = ">=3.8"
@@ -26,7 +26,8 @@ dependencies = [
     "numba>=0.60.0",
     "tqdm>=4.60.0",
     "matplotlib",
-    "scikit-learn>=1.0.0"
+    "scikit-learn>=1.0.0",
+    "scipy>=1.7.0",
 ]
 
 # where to find
@@ -45,6 +46,9 @@ test = [
 ]
 pyscf = [
     "pyscf>=2.0.0"
+]
+autodiff = [
+    "torch>=1.10.0"
 ]
 dev = [
     "pytest>=7.0.0",

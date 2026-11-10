@@ -309,9 +309,9 @@ A steeper, faster drop in MAE indicates a more efficient Active Learning strateg
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (1 minutes 24.321 seconds)
+   **Total running time of the script:** (1 minutes 25.949 seconds)
 
-**Estimated memory usage:**  197 MB
+**Estimated memory usage:**  195 MB
 
 
 .. _sphx_glr_download_auto_examples_08_pool_based_active_learning.py:
